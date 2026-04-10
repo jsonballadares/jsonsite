@@ -1,15 +1,19 @@
 body {
     font-family: 'Times New Roman', serif;
     margin: 0;
-    padding: 20px;
-    background-color: white;
+    padding: 40px 20px;
+    background-color: #f4f5f7;
     color: black;
     line-height: 1.4;
 }
 
 .resume-container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
+    background-color: white;
+    border-radius: 24px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.08);
+    padding: 36px 44px;
 }
 
 .resume-header {
@@ -20,6 +24,10 @@ body {
     border-bottom: 1px solid black;
     padding-bottom: 20px;
     gap: 40px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 5;
 }
 
 /* Logo Section */
@@ -101,9 +109,9 @@ body {
 .resume-body h2 {
     font-size: 18px;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
+    padding: 0 0 5px 0;
     border-bottom: 1px solid black;
-    padding-bottom: 5px;
 }
 
 .job-list, .project-list, .skills-list, .education-list {
