@@ -154,10 +154,34 @@ body {
     color: #666;
 }
 
+.at-symbol {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-right: 2px;
+}
+
+.at-sign {
+    height: 16px;
+    vertical-align: middle;
+    margin: 0 2px;
+    width: auto;
+}
+
 .centene-logo {
-    height: 18px;
+    height: 24px;
     vertical-align: middle;
     margin-left: 4px;
+    width: auto;
+    max-width: 150px;
+}
+
+.circulo-logo {
+    height: 50px;
+    vertical-align: middle;
+    margin-left: 4px;
+    width: auto;
+    max-width: 150px;
+    display: inline-block;
 }
 
 .company, .location, .dates {
