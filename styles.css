@@ -16,25 +16,69 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border-bottom: 1px solid black;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    gap: 40px;
 }
 
-.name h1 {
+/* Logo Section */
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+    width: 100%;
+}
+
+.json-logo {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+.json-logo:hover {
+    transform: scale(1.02);
+}
+
+.json-text {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-size: 96px;
+    font-weight: 900;
+    fill: currentColor;
+    letter-spacing: -8px;
+    text-decoration: none !important;
+}
+
+.json-logo text {
+    text-decoration: none !important;
+}
+
+.name-title {
     margin: 0;
-    font-size: 24px;
+    font-size: 18px;
     text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.5px;
 }
 
-.name a {
+.name-title a {
     text-decoration: none;
     color: black;
+    transition: color 0.2s ease;
 }
 
+.name-title a:hover {
+    color: #666;
+}
+
+/* Contact Info */
 .contact {
     text-align: right;
     font-size: 12px;
+    flex-shrink: 0;
 }
 
 .contact p {
@@ -44,6 +88,10 @@ body {
 .contact a {
     color: black;
     text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
 }
 
 .resume-body section {
@@ -117,6 +165,32 @@ body {
 
 .education-item {
     margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .resume-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .logo-section {
+        align-items: center;
+    }
+
+    .contact {
+        text-align: center;
+    }
+
+    .json-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .name-title {
+        font-size: 16px;
+    }
 }
 
 /* Print styles */
