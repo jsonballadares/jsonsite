@@ -154,12 +154,10 @@ body {
     color: #666;
 }
 
-.centene {
-    color: #024069;
-}
-
-.corporation {
-    color: #98958C;
+.centene-logo {
+    height: 18px;
+    vertical-align: middle;
+    margin-left: 4px;
 }
 
 .company, .location, .dates {
