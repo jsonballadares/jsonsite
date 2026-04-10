@@ -3,15 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Jason Balladares - Resume</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="app">
-        <h1>Hello World</h1>
-        <p>Counter: <span id="counter">0</span></p>
-        <button id="increment">Increment</button>
+    <div class="resume-container">
+        <header class="resume-header">
+            <div class="name">
+                <h1><a href="https://www.jsonballadares.com">Jason Balladares</a></h1>
+            </div>
+            <div class="contact">
+                <p><a href="mailto:jsonballadares@gmail.com">jsonballadares@gmail.com</a></p>
+                <p><a href="https://www.linkedin.com/in/jsonballadares/">linkedin.com/jsonballadares</a></p>
+                <p><a href="http://github.com/jsonballadares/">github.com/jsonballadares</a></p>
+                <p>Mobile: 786-720-1701</p>
+            </div>
+        </header>
+        <main class="resume-body">
+            <section class="experience-section">
+                <h2>Experience</h2>
+                <ul class="job-list">
+                    <li class="job">
+                        <div class="job-header">
+                            <h3>Software Engineer</h3>
+                            <span class="company">Centene</span>
+                            <span class="location">St. Louis, MO</span>
+                            <span class="dates">July 2022 - Current</span>
+                        </div>
+                        <ul class="responsibilities">
+                            <li><strong>CRTR:</strong> Using Golang, Kafka, Kubernetes, AWS, GitLab, Mongo, and Oracle SQL we are able to host restful API's which internal and external vendors use in order to access billions of claims data almost instantly. The work done daily centers around ETL's, API's, and ironing out any functions which may be required by end users and source systems whether supporting existing functions or creating new ones</li>
+                            <li><strong>Windower:</strong> Designed and developed a two part back-end micro service to reduce on the number of write operations to our mongo database. Instead of directly writing claim events to our database we allow the claims to mature like fine wine. This involved modifying existing software to produce events to a kafka topic and creating a consumer that would be able to horizontally scale and be fault resistant.</li>
+                            <li><strong>On-Call:</strong> Working on service tickets for external and internal vendors. Making sure our systems run smoothly and aid customers as needed. Performing reports, rehydrations, system analyses, coding patches, ticket creation and meeting with customers to solve issues in the CRTR ecosystem.</li>
+                        </ul>
+                    </li>
+                    <li class="job">
+                        <div class="job-header">
+                            <h3>Software Engineer</h3>
+                            <span class="company">Circulo Health</span>
+                            <span class="location">Columbus, OH</span>
+                            <span class="dates">May 2021 - June 2022</span>
+                        </div>
+                        <ul class="responsibilities">
+                            <li><strong>SONAR:</strong> Using AWS, Terraform, Gitlab, Go, React, Atlassian and Olive Helps LDK to build a platform to facilitate communication with providers. Working full stack on a server-less application writing RESTful API's, React/LDK components, connecting them, writing tests, and infra code.</li>
+                            <li><strong>DAC:</strong> Contributed to our internal Email, User, and Slack bot micro services which helped reduce dependencies of other external services/engineering time/spending.</li>
+                            <li><strong>Admin UI:</strong> Our old admin UI was created in angular and had lots of bugs so I had the liberty of implementing the face lift for it. This involved rewriting code in vue.js and using figma to turn designs into components and putting them together.</li>
+                        </ul>
+                    </li>
+                    <li class="job">
+                        <div class="job-header">
+                            <h3>Software Engineer</h3>
+                            <span class="company">Accelirate</span>
+                            <span class="location">Miami, FL</span>
+                            <span class="dates">Oct 2019 - May 2021</span>
+                        </div>
+                        <ul class="responsibilities">
+                            <li><strong>Team Lead:</strong> Managing and mentoring a group of 10 engineers on software process's and best practices related to document processing. I facilitate a weekly stand up where they provide updates on their various tasks and I act as a scrum master unblocking and helping as needed.</li>
+                            <li><strong>Document Processing:</strong> Architected and engineered generic software systems to automate end to end business process's involving the large scale ingestion of various documents using ML Models, OCR, NoSQL, AWS, UiPath AiFabric, Orchestrator API's and Scalyr. These process's on average created 6-figure ROI's for our clients and processed thousands of documents per day with various components running continuously.</li>
+                            <li><strong>Text To PDF:</strong> Created a .Net package to convert UTF-8 text using no external API's. This was used on hundreds of thousands production emails in order to create viable input for invoice processing along with creating a better user experience for validation and generating more accurate retraining data.</li>
+                            <li><strong>Automation Research:</strong> Conducted research on the latest emerging automation technologies in order to facilitate the creation of bleeding edge solutions. Created POC's, use cases/analysis, and presentations in order to discuss viability, strategies, and standards to be applied company wide with the management team.</li>
+                            <li><strong>Seminar Host:</strong> Host of multiple client and internal facing seminar sessions. These sessions where streamed live and involved discussing either client implementations or technical knowledge. Topics discussed during these sessions where OCR Security, Intelligent Document Processing, and Generic Solution Discussions</li>
+                        </ul>
+                    </li>
+                    <li class="job">
+                        <div class="job-header">
+                            <h3>Software Engineer</h3>
+                            <span class="company">Miami Dade College</span>
+                            <span class="location">Miami, FL</span>
+                            <span class="dates">June 2018 - Oct 2019</span>
+                        </div>
+                        <ul class="responsibilities">
+                            <li><strong>MDChem:</strong> Lead Engineer for creating the front end of the MDC chemistry department mobile app. The app was made using Unity and the MERN stack; the app consisted of mini-games which where user stories/requirements described by the department head and acted as a fun way to engage students. The back-end allowed for multiple schools to distribute the app and monitor student progress along with normal administrative functions.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="projects-section">
+                <h2>Projects</h2>
+                <ul class="project-list">
+                    <li><strong>MeetTwoEat:</strong> Android app for finding places to meet up and dine between you and another friend using your locations. Was created using Android Studio and Google Place's API's.</li>
+                    <li><strong>Memer:</strong> A cli application that listens to your requests and process's it using Google Clouds Voice Recognition API's and Imgur API's in order to display what you requested as ASCII art.</li>
+                </ul>
+            </section>
+            <section class="skills-section">
+                <h2>Programming Skills</h2>
+                <ul class="skills-list">
+                    <li><strong>Languages:</strong> Go, JS/TS, Java, C# <span class="working-knowledge"><strong>Working Knowledge:</strong> Python, Bash</span></li>
+                    <li><strong>Technologies:</strong> AWS, Kafka, Gitlab, Mongo, Kubernetes, Unix <span class="working-knowledge"><strong>Working Knowledge:</strong> React, Angular, Vue, Django</span></li>
+                </ul>
+            </section>
+            <section class="education-section">
+                <h2>Education</h2>
+                <ul class="education-list">
+                    <li>
+                        <div class="education-item">
+                            <h3>Bachelor of Science in Computer Science, Honors College; GPA: 3.42</h3>
+                            <span class="institution">Florida International University</span>
+                            <span class="location">Miami, FL</span>
+                            <span class="dates">Aug. 2018 -- 2021</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="education-item">
+                            <h3>Associate in Arts in Computer Science; GPA: 3.9</h3>
+                            <span class="institution">Miami Dade College</span>
+                            <span class="location">Miami, FL</span>
+                            <span class="dates">Aug. 2016 -- July 2018</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>

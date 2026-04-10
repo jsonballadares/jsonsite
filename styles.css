@@ -1,27 +1,133 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    font-family: 'Times New Roman', serif;
     margin: 0;
-    background-color: #f0f0f0;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    line-height: 1.4;
 }
 
-#app {
-    text-align: center;
+.resume-container {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
+.resume-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
 }
 
-button:hover {
-    background-color: #45a049;
+.name h1 {
+    margin: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.name a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact {
+    text-align: right;
+    font-size: 12px;
+}
+
+.contact p {
+    margin: 2px 0;
+}
+
+.contact a {
+    color: black;
+    text-decoration: none;
+}
+
+.resume-body section {
+    margin-bottom: 20px;
+}
+
+.resume-body h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+.job-list, .project-list, .skills-list, .education-list {
+    list-style: none;
+    padding: 0;
+}
+
+.job {
+    margin-bottom: 15px;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.job-header h3 {
+    margin: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.company, .location, .dates {
+    font-size: 12px;
+    color: #333;
+}
+
+.responsibilities {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.responsibilities li {
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.project-list li, .skills-list li {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.working-knowledge {
+    display: block;
+    margin-top: 5px;
+}
+
+.education-item h3 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.institution, .location, .dates {
+    font-size: 12px;
+    color: #333;
+}
+
+.education-item {
+    margin-bottom: 10px;
+}
+
+/* Print styles */
+@media print {
+    body {
+        padding: 0;
+    }
+    .resume-container {
+        max-width: none;
+    }
+    .contact a {
+        text-decoration: underline;
+    }
 }
