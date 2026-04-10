@@ -55,7 +55,7 @@ body {
 }
 
 .json-logo:hover {
-    filter: brightness(1.05);
+    transform: scale(1.02);
 }
 
 .json-text {
@@ -70,30 +70,6 @@ body {
     text-decoration: none !important;
     transform-origin: center;
     transition: transform 0.3s ease;
-}
-
-.json-logo:hover .json-j {
-    animation: spin 0.8s ease-in-out infinite;
-}
-
-.json-logo:hover .json-s {
-    animation: spin 0.8s ease-in-out infinite;
-    animation-delay: 0.1s;
-}
-
-.json-logo:hover .json-o {
-    animation: spin 0.8s ease-in-out infinite;
-    animation-delay: 0.2s;
-}
-
-.json-logo:hover .json-n {
-    animation: spin 0.8s ease-in-out infinite;
-    animation-delay: 0.3s;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
 }
 
 .json-logo text {
@@ -143,7 +119,7 @@ body {
 }
 
 .resume-body h2 {
-    font-size: 18px;
+    font-size: 20px;
     text-transform: uppercase;
     margin: 0 0 10px 0;
     padding: 0 0 5px 0;
@@ -168,12 +144,26 @@ body {
 
 .job-header h3 {
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
     text-transform: uppercase;
 }
 
+.at-company {
+    font-style: italic;
+    font-weight: normal;
+    color: #666;
+}
+
+.centene {
+    color: #024069;
+}
+
+.corporation {
+    color: #98958C;
+}
+
 .company, .location, .dates {
-    font-size: 12px;
+    font-size: 14px;
     color: #333;
 }
 
@@ -184,11 +174,11 @@ body {
 
 .responsibilities li {
     margin-bottom: 5px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .project-list li, .skills-list li {
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 5px;
 }
 
@@ -199,11 +189,11 @@ body {
 
 .education-item h3 {
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .institution, .location, .dates {
-    font-size: 12px;
+    font-size: 14px;
     color: #333;
 }
 
