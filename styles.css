@@ -30,7 +30,12 @@ body {
     z-index: 5;
 }
 
-/* Logo Section */
+.logo-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 44px;
+}
+
 .logo-section {
     display: flex;
     flex-direction: column;
@@ -44,11 +49,13 @@ body {
     height: auto;
     max-width: 100%;
     color: black;
-    transition: transform 0.3s ease;
+    transform-origin: center;
+    transform: scale(var(--json-scale, 1));
+    transition: transform 0.2s ease, filter 0.2s ease;
 }
 
 .json-logo:hover {
-    transform: scale(1.02);
+    filter: brightness(1.05);
 }
 
 .json-text {
