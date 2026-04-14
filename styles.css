@@ -186,21 +186,17 @@ body {
 .mdc-logo {
     height: 24px;
     vertical-align: middle;
-    margin-left: 24px;
+    margin-left: 4px;
     width: auto;
     max-width: 150px;
-    display: inline-block;    transform: scale(.1);
-    transform-origin: center;
 }
 
 .circulo-logo {
     height: 24px;
     vertical-align: middle;
-    margin-left: 24px;
+    margin-left: 4px;
     width: auto;
     max-width: 150px;
-    display: inline-block;    transform: scale(3);
-    transform-origin: center;
 }
 
 .company, .location, .dates {
