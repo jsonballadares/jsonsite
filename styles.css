@@ -167,6 +167,14 @@ body {
     width: auto;
 }
 
+.gopher-logo {
+    height: 24px;
+    vertical-align: middle;
+    margin-left: 4px;
+    width: auto;
+    max-width: 150px;
+}
+
 .centene-logo {
     height: 24px;
     vertical-align: middle;
