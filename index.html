@@ -7,16 +7,38 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="logo-container">
-        <div class="logo-section">
-            <svg class="json-logo" viewBox="0 0 360 90" xmlns="http://www.w3.org/2000/svg">
-                <text x="75" y="72" text-anchor="middle" class="json-text json-j">J</text>
-                <text x="135" y="72" text-anchor="middle" class="json-text json-s">S</text>
-                <text x="200" y="72" text-anchor="middle" class="json-text json-o">O</text>
-                <text x="270" y="72" text-anchor="middle" class="json-text json-n">N</text>
-            </svg>
-        </div>
+<div class="logo-container">
+    <div class="logo-section">
+        <svg class="json-logo" viewBox="0 0 500 100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+                    <feTurbulence type="turbulence" baseFrequency="0.04" numOctaves="4" seed="3" result="noise"/>
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+                </filter>
+                <filter id="roughmore" x="-5%" y="-5%" width="110%" height="110%">
+                    <feTurbulence type="turbulence" baseFrequency="0.05" numOctaves="4" seed="7" result="noise"/>
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+                </filter>
+            </defs>
+
+            <rect x="5"   y="8" width="60"  height="82" fill="#d63b3e" rx="3" filter="url(#rough)"/>
+
+            <rect x="71"  y="8" width="85"  height="82" fill="#969db6" rx="3" filter="url(#rough)"/>
+            <text x="113" y="78" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="72" font-weight="700" fill="#36416a" filter="url(#roughmore)">J</text>
+
+            <rect x="162" y="8" width="70"  height="82" fill="#b69e7d" rx="3" filter="url(#rough)"/>
+            <text x="197" y="78" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="72" font-weight="700" fill="#774f1b" filter="url(#roughmore)">S</text>
+
+            <rect x="238" y="8" width="78"  height="82" fill="#e964b9" rx="3" filter="url(#rough)"/>
+            <text x="277" y="78" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="72" font-weight="700" fill="#7a0a4e" filter="url(#roughmore)">O</text>
+
+            <rect x="322" y="8" width="88"  height="82" fill="#a9a9a7" rx="3" filter="url(#rough)"/>
+            <text x="366" y="78" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="72" font-weight="700" fill="#3d3d3b" filter="url(#roughmore)">N</text>
+
+            <rect x="416" y="8" width="79"  height="82" fill="#bf9e3a" rx="3" filter="url(#rough)"/>
+        </svg>
     </div>
+</div>
     <div class="resume-container">
             <!-- <div class="contact">
                 <p><a href="mailto:jsonballadares@gmail.com">jsonballadares@gmail.com</a></p>

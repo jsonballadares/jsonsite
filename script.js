@@ -22,3 +22,11 @@ if (logo) {
     }
   }, { passive: true });
 }
+
+document.querySelectorAll('.skills-list img').forEach(img => {
+    const wrapper = document.createElement('span');
+    wrapper.className = 'skill-tip';
+    wrapper.dataset.tip = img.alt;
+    img.parentNode.insertBefore(wrapper, img);
+    wrapper.appendChild(img);
+});
