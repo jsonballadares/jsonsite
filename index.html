@@ -57,9 +57,10 @@
                             <!-- <span class="dates">July 2022 - Current</span> -->
                         </div>
                         <ul class="responsibilities">
-                            <li><strong>CRTR:</strong> Using Golang, Kafka, Kubernetes, AWS, GitLab, Mongo, and Oracle SQL we are able to host restful API's which internal and external vendors use in order to access billions of claims data almost instantly. The work done daily centers around ETL's, API's, and ironing out any functions which may be required by end users and source systems whether supporting existing functions or creating new ones</li>
-                            <li><strong>Windower:</strong> Designed and developed a two part back-end micro service to reduce on the number of write operations to our mongo database. Instead of directly writing claim events to our database we allow the claims to mature like fine wine. This involved modifying existing software to produce events to a kafka topic and creating a consumer that would be able to horizontally scale and be fault resistant.</li>
-                            <li><strong>On-Call:</strong> Working on service tickets for external and internal vendors. Making sure our systems run smoothly and aid customers as needed. Performing reports, rehydrations, system analyses, coding patches, ticket creation and meeting with customers to solve issues in the CRTR ecosystem.</li>
+                            <li><strong>CRTR:</strong> Built, maintained, and optimized high-throughput REST, GQL, Go APIs & ETL pipelines on Kubernetes and AWS, serving billions of claims records to internal teams and external vendors under low-latency SLAs. We act as a convenience layer between our legacy Oracle SQL systems and MongoDB which stores the claims, and referential claim data which are used to power various applications throughout Centene.</li>
+                            <li><strong>Windower:</strong> Designed a two-service Kafka pipeline that batched and matured claim events to cut MongoDB write volume, backed by a horizontally scalable, fault-tolerant consumer.</li>
+                            <li><strong>Cloud Migration:</strong> Partnered with Public Cloud Services & Enterprise Architecture to standardize workload assessments and migrate Unified Member View, Provider Data Management, Claims RTR and CenProv/CenPoint onto AWS.</li>
+                            <li><strong>On-Call:</strong> For a week out of each month I do an on-call rotation where we triage vendor tickets, data rehydrations, and ship patches to hold SLA commitments. Putting out any fires that may arise.</li>
                         </ul>
                     </li>
                     <li class="job">
