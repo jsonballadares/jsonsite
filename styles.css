@@ -5,6 +5,8 @@ body {
     background-color: #f4f5f7;
     color: black;
     line-height: 1.4;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 .resume-container {
@@ -248,28 +250,113 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
-    .resume-header {
+@media (max-width: 768px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    .logo-container {
+        padding: 0 14px;
+    }
+
+    .resume-container {
+        padding: 28px 22px;
+        border-radius: 18px;
+    }
+
+    .resume-body h2 {
+        font-size: 18px;
+    }
+
+    .job-header {
         flex-direction: column;
-        align-items: center;
-        gap: 20px;
+        align-items: flex-start;
+        gap: 2px;
     }
 
-    .logo-section {
-        align-items: center;
+    .job-header h3 {
+        font-size: 15px;
+        line-height: 1.5;
     }
 
-    .contact {
-        text-align: center;
+    .at-sign {
+        height: 14px;
     }
 
-    .json-logo {
-        width: 100px;
-        height: 100px;
+    .centene-logo,
+    .accelirate-logo,
+    .mdc-logo,
+    .circulo-logo,
+    .betterworks-logo {
+        height: 20px;
+        max-width: 120px;
     }
 
-    .name-title {
-        font-size: 16px;
+    .responsibilities {
+        padding-left: 18px;
+    }
+
+    .responsibilities li,
+    .project-list li,
+    .skills-list li {
+        font-size: 13px;
+    }
+
+    .skills-list li {
+        line-height: 2;
+    }
+
+    .skills-list .centene-logo {
+        height: 18px;
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 14px 6px;
+    }
+
+    .logo-container {
+        padding: 0 10px;
+    }
+
+    .resume-container {
+        padding: 20px 16px;
+        border-radius: 14px;
+    }
+
+    .resume-body h2 {
+        font-size: 17px;
+    }
+
+    .job-header h3 {
+        font-size: 14px;
+    }
+
+    .centene-logo,
+    .accelirate-logo,
+    .mdc-logo,
+    .circulo-logo,
+    .betterworks-logo {
+        height: 18px;
+        max-width: 100px;
+    }
+
+    .responsibilities {
+        padding-left: 16px;
+    }
+
+    .responsibilities li,
+    .project-list li,
+    .skills-list li {
+        font-size: 12.5px;
+    }
+
+    .skills-list .centene-logo {
+        height: 16px;
+        max-width: 90px;
+        margin-left: 3px;
     }
 }
 
