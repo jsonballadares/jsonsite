@@ -200,6 +200,14 @@ body {
     max-width: 150px;
 }
 
+.betterworks-logo {
+    height: 24px;
+    vertical-align: middle;
+    margin-left: 4px;
+    width: auto;
+    max-width: 150px;
+}
+
 .company, .location, .dates {
     font-size: 14px;
     color: #333;
